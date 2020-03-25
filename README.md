@@ -23,12 +23,12 @@ Plots are saved in `plots/` folder as PNG files.
 
 #### Cases
 
-![Cases plot](covid19-Cases.png)
+![Cases plot](covid19_Cases.png)
 
 #### Deaths
 
-![Deaths plot](covid19-Deaths.png)
+![Deaths plot](covid19_Deaths.png)
 
 #### Mortality
 
-![Mortality plot](covid19-Mortality.png)
+![Mortality plot](covid19_Mortality.png)
