@@ -14,7 +14,7 @@ countries = ['Colombia',
              'France',
              'United_States_of_America',
              'United_Kingdom',
-             'China']
+             'Australia']
 ```
 
 Plots are saved in `plots/` folder as PNG files.
