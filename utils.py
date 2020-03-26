@@ -3,6 +3,7 @@ import matplotlib.dates as mdates
 import matplotlib.gridspec as gridspec
 from matplotlib.dates import datestr2num
 from datetime import timedelta
+import csv
 
 
 def div0(n, d):
@@ -61,5 +62,4 @@ def build_plot(data, countries, data_type='Not specified', vis=40, dpi=100):
     plt.savefig(filename, dpi=dpi)
     plt.close()
     print("%s plot saved to file '%s'"%(data_type, filename))
-
 

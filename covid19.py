@@ -35,7 +35,7 @@ for country in countries:
     cases = []
     deaths = []
     data[country] = {}
-    with open('data/'+url.split('/')[-1]) as csv_file:
+    with open('data/'+url.split('/')[-1], "rt", encoding="iso-8859-2") as csv_file:
         csv_reader = csv.reader(csv_file, delimiter=',')
         for row in csv_reader:
             if country == row[6]:
