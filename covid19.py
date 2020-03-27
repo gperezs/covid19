@@ -1,3 +1,4 @@
+import os
 import sys
 import csv
 import wget
@@ -19,14 +20,16 @@ vis = 32 # Plot last 'vis' days (default=40)
 dpi = 100 # PNG image saving dpi
 
 today = date.today()
-date = today.strftime("%Y-%m-%d")
-print('Building plots for %s'%(date))
+datet = today.strftime("%Y-%m-%d")
+print('Building plots for %s'%(datet))
 
 print('Data downloaded from the European Centre for Disease Prevention and Control')
-url = 'https://www.ecdc.europa.eu/sites/default/files/documents/COVID-19-geographic-disbtribution-worldwide-' + date + '.csv'
+# Updated link since 2020-03-27 by the ECDPC
+url = 'https://opendata.ecdc.europa.eu/covid19/casedistribution/csv'
 
-if not path.exists('data/'+url.split('/')[-1]):
+if not path.exists('data/'+datet+'.csv'):
     wget.download(url, out='data/')
+    os.rename('data/csv', 'data/'+datet+'.csv')
     print('')
 
 data = {}
@@ -35,7 +38,7 @@ for country in countries:
     cases = []
     deaths = []
     data[country] = {}
-    with open('data/'+url.split('/')[-1], "rt", encoding="iso-8859-2") as csv_file:
+    with open('data/'+datet+'.csv', "rt", encoding="iso-8859-2") as csv_file:
         csv_reader = csv.reader(csv_file, delimiter=',')
         for row in csv_reader:
             if country == row[6]:
