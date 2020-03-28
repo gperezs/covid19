@@ -14,7 +14,8 @@ countries = ['Colombia',
              'France',
              'United_States_of_America',
              'United_Kingdom',
-             'Australia']
+             'Australia',
+             'Germany']
 
 vis = 32 # Plot last 'vis' days (default=40)
 dpi = 100 # PNG image saving dpi
