@@ -19,6 +19,6 @@ countries = ['Colombia',
 
 Plots are saved in `plots/` folder as PNG files.
 
-### Mortality plot (updated 03/25/2020)
+### Mortality plot (updated 03/28/2020)
 
 ![Mortality plot](covid19_Mortality.png)
