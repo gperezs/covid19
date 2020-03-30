@@ -1,4 +1,4 @@
-## Plots (updated 03/29/2020)
+## Plots
 
 ### Cases plot 
 
