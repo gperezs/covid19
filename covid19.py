@@ -17,7 +17,7 @@ countries = ['Colombia',
              'Australia',
              'Germany']
 
-vis = 32 # Plot last 'vis' days (default=40)
+vis = 40 # Plot last 'vis' days (default=40)
 dpi = 100 # PNG image saving dpi
 
 today = date.today()
