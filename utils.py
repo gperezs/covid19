@@ -46,7 +46,7 @@ def build_plot(data, countries, data_type='Not specified', vis=40, dpi=100):
                     data[country]['CUM_DEATHS'][-1], color='#555555')
     ax.legend(countries, loc='upper left', shadow=True)
     ax.set_ylabel(data_type)
-    ax.set_xticks(mdates.num2date(datestr2num(data['Italy']['DATE'][0::1])))
+    ax.set_xticks(mdates.num2date(datestr2num(data['Italy']['DATE'][0::5])))
     ax.grid(True, linestyle='--')
     ax.xaxis.set_major_formatter(myFmt)
     ax.set_facecolor('#ECECEC')
